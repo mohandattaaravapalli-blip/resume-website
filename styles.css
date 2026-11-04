@@ -1,0 +1,198 @@
+/* ---------- Base (element selectors) ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #3c4657;
+  background-color: #f7f5f0;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #1e2a4a;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #e8a33d;
+  display: inline-block;
+}
+
+a {
+  color: #1e2a4a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e8a33d;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background-color: #1e2a4a;
+  color: #f7f5f0;
+  font-size: 0.9rem;
+}
+
+/* ---------- Navigation bar (flexbox, class selectors) ---------- */
+.navbar {
+  background-color: #1e2a4a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-links a {
+  color: #d8dce6;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #e8a33d;
+}
+
+/* ---------- Hero / profile (#id selector) ---------- */
+#profile {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 24px 40px;
+  text-align: center;
+}
+
+#profile h1 {
+  font-size: 2.4rem;
+  margin-bottom: 4px;
+}
+
+.hero-location {
+  color: #e8a33d;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hero-contact {
+  margin-bottom: 24px;
+}
+
+.hero-summary {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ---------- Sections and cards (class selectors) ---------- */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 24px 8px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(30, 42, 74, 0.08);
+  border-left: 4px solid #e8a33d;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.card-date {
+  color: #e8a33d;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.card-subtitle {
+  font-weight: 500;
+}
+
+.card-location {
+  color: #7a8499;
+  font-size: 0.9rem;
+}
+
+.card ul li {
+  margin-bottom: 4px;
+}
+
+/* ---------- Skill tags (display: inline-block) ---------- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #eef1f7;
+  color: #1e2a4a;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+/* ---------- Mobile view ---------- */
+@media (max-width: 600px) {
+  .nav-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  #profile h1 {
+    font-size: 1.8rem;
+  }
+}
